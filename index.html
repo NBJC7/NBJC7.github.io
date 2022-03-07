@@ -13,40 +13,38 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
         color:white;
         padding:20px;
         margin-left:20px;
-        font-family:cursive;
     }
-    .marginLeft {
-        margin-left:20px;
-    }
-    .w3-third img{
-        margin-bottom: -5px;
-        opacity: 0.8;
-        cursor: pointer}
     .w3-third img:hover{opacity: 1}
     #frontEnd { 
         font-size: 14px;
-        font-family:cursive;
+        font-family:fantasy;
     }
     img {
-        display:inline;
-        height:200px;
-        width:350px;
-        border:none;
-        margin:20px;
+        width:95%;
         box-shadow: 0px 0px 50px pink;
-        transition:1s;
+        border-radius: 0px 20px 0px 20px;
+        transition:1s
     }
     img:hover {
-        box-shadow: 0px 0px 50px green;
-        transition: 1s;
+        box-shadow: 0px 0px 70px green;
+        transition:  all 1s ease-out;
+        
     }
     #imgAboutMe {
         border-radius: 0px 10px 0px 20px;
+    }
+    #projects {
+        padding-bottom:10%;
     }
     .contactLink {
         padding: 20px;
         font-size: 20px;
         text-decoration: none;
+    }
+    @media (max-width: 800px){
+        img{
+         box-shadow: 0px 0px 50px green;
+        }
     }
 </style>
 </head>
@@ -54,7 +52,7 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 
 <!-- Sidebar/menu -->
 <nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center" style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
-  <h3 class="w3-padding-64 w3-center"><b>Nestor D Bonilla</b></h3>
+  <h3 class="w3-padding-64 w3-center"><b>Front End Developer<br>Nestor D Bonilla</b></h3>
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
   <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">PROJECTS</a> 
   <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
@@ -62,7 +60,7 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 
 <!-- Top menu on small screens -->
 <header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-15">
-  <span class="w3-left w3-padding">NESTOR D BONILLA </span>
+  <span class="w3-left w3-padding">NESTOR D BONILLA</span>
     <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
 </header>
 
@@ -76,21 +74,21 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   <div class="w3-hide-large" style="margin-top:83px"></div>
   
   <!-- Projects -->
-    <h1 class="titleProjects">PROJECTS</h1>
-  <div class="w3-row">
+  <h1 class="titleProjects">PROJECTS</h1>
+  <div id= "projects" class="w3-row w3-center">
+      <div class="w3-third">
+        <h5 class="titleProjects">Actsweb.org</h5>
         <img src="https://nbjc7.github.io/actsweb.org.png" alt="image of website ActsWeb.org">
-        <img src="https://nbjc7.github.io/actsweb.org.png" alt="image of website ActsWeb.org">
-        <img src="https://nbjc7.github.io/actsweb.org.png" alt="image of website ActsWeb.org">
-  </div>
-  <!-- Pagination -->
-  <div class="w3-center w3-padding-32">
-    <div class="w3-bar">
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
-      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
-    </div>
-  </div>
-  
+      </div>
+      <div class="w3-third">
+        <h5 class="titleProjects">Music Teaching</h5>
+        <img src="https://nbjc7.github.io/Music Teaching.png" alt="image of website ActsWeb.org">
+      </div>
+       <div class="w3-third">
+        <h5 class="titleProjects">Custom Template</h5>
+        <img src="https://nbjc7.github.io/Hand Coded Template.png" alt="image of website ActsWeb.org">
+      </div>
+  </div> 
     <!--Technologies-->
   <div class="w3-container w3-dark-grey w3-text-light-grey">
     <div class="w3-justify">
@@ -135,38 +133,3 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
             <p><a class="w3-block w3-black w3-margin-bottom contactLink" href="mailto:faiththroughjesus@gmail.com">faiththroughjesus@gmail.com</a></p>
         </div>
     </div>
-  </div>
-    </div>
-     </div>
-  <!-- Footer -->
-  <footer class="w3-container w3-padding-32 w3-grey">  
-   <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
-  </footer>
-   
-  
-
-<!-- End page content -->
-
-<script>
-// Script to open and close sidebar
-function w3_open() {
-  document.getElementById("mySidebar").style.display = "block";
-  document.getElementById("myOverlay").style.display = "block";
-}
- 
-function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-  document.getElementById("myOverlay").style.display = "none";
-}
-
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-
-</script>
-</body>
-</html>
