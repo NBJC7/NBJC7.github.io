@@ -1,6 +1,6 @@
-{
-	"author":"Nestor D Bonilla Lopez",
+{	
 	"name": "fcc-learn-npm-package-json",
+	"author": "Nestor D Bonilla Lopez",
 	"dependencies": {
 		"express": "^4.14.0"
 	},
