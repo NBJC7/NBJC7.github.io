@@ -3,7 +3,7 @@
     <head>
         <title>Website</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!--License regarding to boostrap only MIT License only
+        <!--boostrap MIT License
                     The MIT License (MIT)
 
                     Copyright (c) 2011-2018 Twitter, Inc.
@@ -31,7 +31,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
         <style>
-            * {
+            body{
                 color:white;
             }
             iframe{
@@ -60,9 +60,6 @@
                 height: 57vh;
                 background-color: black;
             }
-            table {
-                width:100vw;
-            }
             #person-icon {
                 color:cornflowerblue;
                 font-size: 20px;
@@ -74,81 +71,89 @@
          
     </head>
     <body>
-    <div id="background">
-    <div class="container">
-    <header class="pt-4 pb-4 text-end">
-                <i id="person-icon" class="bi bi-person-circle"></i>
-                <span class="h4">Nestor D Bonilla Website</span>
-    </header> 
-    <main>
-        <table class="table bg-dark text-white">
-            <tr>
-                <th class="bg-primary">Developer <i class="bi bi-code-square text-white size-2"> </i></th>
-                <td>HTML5</td>
-                <td>CSS3</td>
-                <td>Javascript</td>
-                <td>PHP</td>
-                <td>SQL</td>
-            </tr>
-            <tr>
-                <th class="bg-success">Frameworks</th>
-                <td>React</td>
-                <td>Bootstrap</td>
-                <td>Redux</td>
-                <td>JQuery</td>
-                <td>Android Studio</td>
-            </tr>
-        </table>
-        <div class="m-0"><h3 id="projects" class="text-center m-0 p-4" >Projects</h4></div>
-        <div id = "main-content" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <iframe src = "https://actsweb.org" scrolling="no"></iframe>
-                </div>
+        <div id="background">
+            <div class="container">
+                <header class="pt-4 pb-4 text-end">
+                    <i id="person-icon" class="bi bi-person-circle"></i>
+                    <span class="h4">Nestor D Bonilla Website</span>
+                </header> 
+        <main>
+            <div class="table-responsive">
+                <table class="table table-responsive bg-dark text-white">
+                    <tr>
+                        <th class="bg-primary">Developer <i class="bi bi-code-square text-white size-2"> </i></th>
+                        <td>HTML5</td>
+                        <td>CSS3</td>
+                        <td>Javascript</td>
+                        <td>PHP</td>
+                        <td>SQL</td>
+                    </tr>
+                    <tr>
+                        <th class="bg-success">Frameworks</th>
+                        <td>React</td>
+                        <td>Bootstrap</td>
+                        <td>Redux</td>
+                        <td>JQuery</td>
+                        <td>Android Studio</td>
+                    </tr>
+                </table>
             </div>
-        </div>  
-        <table class="table bg-dark text-white mt-2">
-            <tr>
-                <th class="bg-secondary">Certificates</th>
-                <td>Responsive Web Design</td>
-                <td>JavaScript Algorithms and Data Structures</td>
-            </tr>
-        </table>    
+            <div class="m-0">
+                <h3 id="projects" class="text-center m-0 p-4" >Projects</h4>
+            </div>
+            <div id = "main-content" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <iframe src = "https://actsweb.org" scrolling="no"></iframe>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="" src="Music Lessons.png" alt="website for music lessons">
+                    </div>
+                </div>
+            </div>  
+            <div class="table-responsive">
+                <table class="table bg-dark text-white mt-2">
+                    <tr>
+                        <th class="bg-secondary">Certificates</th>
+                        <td>Responsive Web Design</td>
+                        <td>JavaScript Algorithms and Data Structures</td>
+                    </tr>
+                </table>
+            </div>   
+        </main>
+        <footer>
+            <p class = "text-black"> &copy 2022 Nestor D Bonilla Lopez</p>
+        </footer>
+            </div>
+        </div>
     <!-- JavaScript Bundle with Popper -->
-
-    </main>
-    <footer>
-        <p class = "text-black"> &copy 2022 Nestor D Bonilla Lopez</p>
-    </footer>
-</div>
-</div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
-/* License regargin only to boostrap MIT license only
-        The MIT License (MIT)
-
-                    Copyright (c) 2011-2018 Twitter, Inc.
-                    Copyright (c) 2011-2018 The Bootstrap Authors
-
-                    Permission is hereby granted, free of charge, to any person obtaining a copy
-                    of this software and associated documentation files (the "Software"), to deal
-                    in the Software without restriction, including without limitation the rights
-                    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-                    copies of the Software, and to permit persons to whom the Software is
-                    furnished to do so, subject to the following conditions:
-
-                    The above copyright notice and this permission notice shall be included in
-                    all copies or substantial portions of the Software.
-
-                    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-                    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-                    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-                    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-                    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-                    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-                    THE SOFTWARE.
-
-*/
-
-</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+        /* boostrap 
+            The MIT License (MIT)
+    
+                        Copyright (c) 2011-2018 Twitter, Inc.
+                        Copyright (c) 2011-2018 The Bootstrap Authors
+    
+                        Permission is hereby granted, free of charge, to any person obtaining a copy
+                        of this software and associated documentation files (the "Software"), to deal
+                        in the Software without restriction, including without limitation the rights
+                        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+                        copies of the Software, and to permit persons to whom the Software is
+                        furnished to do so, subject to the following conditions:
+    
+                        The above copyright notice and this permission notice shall be included in
+                        all copies or substantial portions of the Software.
+    
+                        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+                        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+                        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+                        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+                        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+                        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+                        THE SOFTWARE.
+    
+        */
+    
+    </script>
 </body>
 </html>
