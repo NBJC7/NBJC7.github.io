@@ -3,7 +3,7 @@ body {
   color:white;
 }
 img {
-  display:inline;
+  display:inline-block;
   height: 100px;
   width: auto;
 }
