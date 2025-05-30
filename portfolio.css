@@ -9,7 +9,7 @@ body {
 img {
   display:inline-block;
   height: auto;
-  width: 21vw;
+  width: 20vw;
   border-radius:50px;
 }
 body{
@@ -29,10 +29,13 @@ table {
   text-align: center;
   background-color:rgb(255, 255, 255);
   color:rgb(25, 39, 42);
-  padding-bottom:25px;
+  padding-bottom:3vh;
 }
-#projects,img, h4, header{
-  padding:25px;
+#projects,img, header{
+  padding:3.45vh;
+}
+h4 {
+  padding: 20px
 }
 #projects {
   background-color:rgba(255, 103, 103, 0.295);
