@@ -3,6 +3,7 @@ body {
   color:white;
 }
 img {
+  display:inline;
   height: 100px;
   width: auto;
 }
